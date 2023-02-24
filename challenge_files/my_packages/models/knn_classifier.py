@@ -40,4 +40,4 @@ def predict_knn_model(knn_model, paramns: list = [0, 0,0, 0, 0, 0]):
     Inform a list with values to following parameters:
     'goal', 'pledged', 'backers',	'usd pledged',	'usd_pledged_real',	'usd_goal_real'.
     """
-    return f"Based on given values, the project was '{knn_model.predict([paramns])[0]}'."
+    return f"Based on given values, the project will be '{knn_model.predict([paramns])[0]}'."
